@@ -1,12 +1,9 @@
 ### COMP 1073 – Client-Side JavaScript
 
-# LAB 4
-
-#### DESCRIPTION
-Using the provided HTML, CSS, and JavaScript as a starting point, build an application that allows the user to modify the background color of the page using three slider inputs, each controlling the red, green, and blue color channels.
+# LAB 5
 
 #### INSTRUCTIONS
-Follow along with the numbered instructions inside the code comments in the provided JavaScript file.
+Follow along with the numbered instructions inside the code comments in the provided JavaScript file. Follow the instructions inside the gallery.js file labeled - steps A to G.
 
 #### EVALUATION
 <table>
@@ -16,7 +13,7 @@ Follow along with the numbered instructions inside the code comments in the prov
   </tr>
   <tr>
     <td>The above taska have been completed</td>
-    <td>/12</td>
+    <td>/7</td>
   </tr>
 </table>
 
