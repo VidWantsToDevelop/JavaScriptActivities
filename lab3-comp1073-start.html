@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Lab 3 | COMP1073 Client-Side JavaScript</title>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <h1>Countdown</h1>
+        <!-- STEP 2 -->
+
+        <script>
+            // STEP 1: Open this page in a browser tab and open up the console
+            // STEP 2: Build an HTML element above to contain the value of the var i (the counter inside the loop)
+            // STEP 3: Change the below loop to a DO/WHILE structure
+            // STEP 4: Add a condition with an IF statement that checks if countDown is zero - and if it is, output text to the HTML element above that reads, "Blastoff!"
+            // STEP 5: Change the background color of the page from yellow (from 8-5) , to orange (from 4-1), to red (at 0) using a SWITCH statement
+
+            // STEP 3
+            for (let i = 10; i >= 0; i--) {
+                setTimeout(function () {
+                    console.log(i);
+                    // STEP 4
+
+                    // STEP 5
+                }, 10000 - 1000 * i);
+            }
+        </script>
+    </body>
+</html>
