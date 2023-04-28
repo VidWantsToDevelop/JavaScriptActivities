@@ -12,7 +12,7 @@ Follow along with the numbered instructions inside the code comments in the prov
     <th><b>Mark</b></th>
   </tr>
   <tr>
-    <td>The above taska have been completed</td>
+    <td>The above task have been completed</td>
     <td>/4</td>
   </tr>
 </table>
