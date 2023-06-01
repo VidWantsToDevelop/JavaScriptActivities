@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/storymaker.js" defer></script>
+</head>
+
+<body>
+	<div class="main-container">
+		<h1>See-N-Say Storymaker</h1>
+	<section>
+		<!-- Section with all the buttons for the user to build their story -->
+		<h2>Create Your Story</h2>
+		<div class="forms-container">
+
+			<div class="unit-wrapper">
+				<div class="radiobuttonsList">
+					<form>
+						<div>
+							<label for="turkey">The turkey</label>
+							<input class="noun1Radiobutton" name="noun1" type="radio" value="The turkey"/>	
+						</div>
+						<div>
+							<label for="mom">Mom</label>
+							<input class="noun1Radiobutton" name="noun1" type="radio" value="Mom" />
+						</div>
+						<div>
+							<label for="dad">Dad</label>
+							<input class="noun1Radiobutton" name="noun1" type="radio"  value="Dad"/>
+						</div>
+						<div>
+							<label for="dog">The dog</label>
+							<input class="noun1Radiobutton" name="noun1" type="radio" value="The dog"/>
+						</div>
+						<div>
+							<label for="myTeacher">My teacher</label>
+							<input class="noun1Radiobutton" name="noun1" type="radio" value="My teacher"/>
+						</div>
+						<div>
+							<label for="theElephant">The elephant</label>
+							<input class="noun1Radiobutton" name="noun1" type="radio" value="The elephant"/>
+						</div>
+						<div>
+							<label for="cat">The cat</label>
+							<input class="noun1Radiobutton" name="noun1" type="radio" value="The cat"/>
+						</div>
+					</form>
+				</div>
+				<p class="textParagraph" id="chosenNoun1"></p>
+			</div>
+			<div class="unit-wrapper">
+				<div class="radiobuttonsList">
+					<form>
+						<div>
+							<label for="satOn">sat on</label>
+							<input class="verbRadiobutton" name="verb" type="radio" value="sat on" />
+						</div>
+						<div>
+							<label for="ate">ate</label>
+							<input class="verbRadiobutton" name="verb" type="radio" value="ate" />
+						</div>
+						<div>
+							<label for="dancedWith">danced with</label>
+							<input class="verbRadiobutton" name="verb" type="radio" value="danced with"/>
+						</div>
+						<div>
+							<label for="saw">saw</label>
+							<input class="verbRadiobutton" name="verb" type="radio" value="saw"/>
+						</div>
+						<div>
+							<label for="doesn'tLike">doesn't like</label>
+							<input class="verbRadiobutton" name="verb" type="radio" value="doesn't like"/>
+						</div>
+						<div>
+							<label for="kissed">kissed</label>
+							<input class="verbRadiobutton" name="verb" type="radio" value="kissed"/>
+						</div>
+					</form>
+				</div>
+				<p class="textParagraph" id="chosenVerb"></p>
+			</div>
+			<div class="unit-wrapper">
+				<div class="radiobuttonsList">
+					<form>
+						<div>
+	
+							<label for="aFunny">a funny</label>
+							<input class="adjectiveRadiobutton" name="adjective" type="radio" value="a funny"/>
+						</div>
+						<div>
+							<label for="aScary">a scary</label>
+							<input class="adjectiveRadiobutton" name="adjective" type="radio" value="a scary"/>
+						</div>
+						<div>
+							<label for="aGoofy">a goofy</label>
+							<input class="adjectiveRadiobutton" name="adjective" type="radio" value="a goofy"/>
+						</div>
+						<div>
+							<label for="aSlimy">a slimy</label>
+							<input class="adjectiveRadiobutton" name="adjective" type="radio" value="a slimy"/>
+						</div>
+						<div>
+							<label for="aBarking">a barking</label>
+							<input class="adjectiveRadiobutton" name="adjective" type="radio" value="a barking"/>
+						</div>
+						<div>
+							<label for="aFat">a fat</label>
+							<input class="adjectiveRadiobutton" name="adjective" type="radio" value="a fat"/>
+						</div>
+					</form>
+				</div>
+				<p class="textParagraph" id="chosenAdjective"></p>
+			</div>
+			<div class="unit-wrapper">
+				<div class="radiobuttonsList">
+					<form>
+						<div>
+							<label for="goat">goat</label>
+							<input class="noun2Radiobutton" name="noun2" type="radio" value="goat"/>
+						</div>
+						<div>
+							<label for="monkey">monkey</label>
+							<input class="noun2Radiobutton" name="noun2" type="radio" value="monkey"/>
+						</div>
+						<div>
+							<label for="fish">fish</label>
+							<input class="noun2Radiobutton" name="noun2" type="radio" value="fish"/>
+						</div>
+						<div>
+							<label for="cow">cow</label>
+							<input class="noun2Radiobutton" name="noun2" type="radio" value="cow"/>
+						</div>
+						<div>
+							<label for="frog">frog</label>
+							<input class="noun2Radiobutton" name="noun2" type="radio" value="frog"/>	
+						</div>
+						<div>
+							<label for="bug">bug</label>
+							<input class="noun2Radiobutton" name="noun2" type="radio" value="bug"/>
+						</div>
+					</form>
+				</div>
+				<p class="textParagraph" id="chosenNoun2"></p>
+			</div>
+			<div class="unit-wrapper">
+				<div class="radiobuttonsList">
+					<form>
+						<div>
+							<label for="onTheMoon">on the moon</label>
+							<input class="settingRadiobutton" name="setting" type="radio" value="on the moon"/>
+						</div>
+						<div>
+							<label for="onTheChair">on the chair</label>
+							<input class="settingRadiobutton" name="setting" type="radio" value="on the chair"/>
+						</div>
+						<div>
+							<label for="inMySpaghetti">in my spaghetti</label>
+							<input class="settingRadiobutton" name="setting" type="radio" value="in my spaghetti"/>
+						</div>
+						<div>
+							<label for="inMySoup">in my soup</label>
+							<input class="settingRadiobutton" name="setting" type="radio" value="in my soup"/>
+						</div>
+						<div>
+							<label for="inTheGrass">in the grass</label>
+							<input class="settingRadiobutton" name="setting" type="radio" value="in the grass"/>
+						</div>
+						<div>
+							<label for="inMyShoes">in my shoes</label>
+							<input class="settingRadiobutton" name="setting" type="radio" value="in my shoes"/>
+						</div>
+					</form>
+				</div>
+				<p class="textParagraph" id="chosenSetting"></p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<!-- Section with playback controls to see or hear the story -->
+		<h2>See Your Story</h2>
+		<div>
+			<button id="playback">Show Story</button>
+			<button id="random">Random Story</button>
+			<button id="reset">Reset</button>
+			<button id="read">Read</button>
+		</div>
+		<!-- Empty paragraph to display the story -->
+		<p id="story"></p>
+	</section>
+	</div>
+</body>
+
+</html>
