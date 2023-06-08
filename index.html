@@ -7,22 +7,84 @@
     </head>
 
     <body>
-        <h1>Countdown</h1>
-        <!-- STEP 2 -->
+        <div class="container">
+            <div id="countdown-wrapper">
+                <h1>Countdown</h1>
+                <!-- STEP 2 -->
+                <p id="counter">
+                    
+                </p>
+            </div>
+            <div>
+                <img src="./images/dog-7694627_1280.jpg" height="300px" width="300px" hidden id="img1"/>
+            </div>
+            <div>
+                <img src="./images/halloween-7487706_1280.jpg" hidden height="300px" width="300px" id="img2"/>
+            </div>
+            <div>
+                <img src="./images/three-kingdoms-8033526_1280.jpg" hidden height="300px" width="300px" id="img3"/>
+            </div>
+        </div>
 
         <script>
             // STEP 1: Open this page in a browser tab and open up the console
             // STEP 2: Build an HTML element above to contain the value of the var i (the counter inside the loop)
+            let counter = document.querySelector("#counter");
+
+            let amntOfImages = 3
+            let listOfImages = []
+            for(let i = 0; i < amntOfImages; i++) {
+                listOfImages.push(document.querySelector(`#img${i+1}`));
+            }
+            
             // STEP 3: Add a condition with an IF statement that checks if countDown is zero - and if it is, output text to the HTML element above that reads, "Blastoff!"
             // STEP 4: Change the background color of the page from yellow (from 8-5) , to orange (from 4-1), to red (at 0) using a SWITCH statement
             // Anything extra that you can think of!
+
+            setTimeout(() => {
+                document.body.style.backgroundColor = "green";
+                console.log("Thank you for waiting!");
+
+                // Create a new image element
+                let secretImage = document.createElement("img");
+                secretImage.src = "./images/secretImage.jpg";
+
+                // Replace the p tag with the new image
+                counter.replaceWith(secretImage);
+                document.querySelector("h1").remove();
+
+                secretImage.style.height = "300px";
+                secretImage.style.width = "300px";
+            }, 25000)
 
             for (let i = 10; i >= 0; i--) {
                 setTimeout(function () {
                     console.log(i);
                     // STEP 3
+                    if (i == 0) {
+                        counter.innerHTML = "Blastoff!";
+                    } else {
+                        counter.innerHTML = i;
+                    }
 
                     // STEP 4
+                    switch (i) {
+                        case 8:
+                            document.body.style.backgroundColor = "yellow";
+                            listOfImages[0].hidden = false;
+                            break;
+                        case 4:
+                            document.body.style.backgroundColor = "orange";
+                            listOfImages[1].hidden = false;
+                            break;
+                        case 0:
+                            document.body.style.backgroundColor = "red";
+                            listOfImages[2].hidden = false;
+                            break;
+                        default:
+                            console.log("No color change")
+                            break;
+                    }
                 }, 10000 - 1000 * i);
             }
         </script>
