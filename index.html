@@ -50,7 +50,7 @@
                 secretImage.src = "./images/secretImage.jpg";
 
                 // Replace the p tag with the new image
-                counter.replaceWith(secretImage);
+                counter = counter.replaceWith(secretImage);
                 document.querySelector("h1").remove();
 
                 secretImage.style.height = "300px";
@@ -80,9 +80,6 @@
                         case 0:
                             document.body.style.backgroundColor = "red";
                             listOfImages[2].hidden = false;
-                            break;
-                        default:
-                            console.log("No color change")
                             break;
                     }
                 }, 10000 - 1000 * i);
