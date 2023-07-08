@@ -12,6 +12,22 @@ then open this page in a browser and enter 'person' in the console */
     person.interests[0]
 */
 
+var person = {
+    name: {
+        firstName: "John",
+        lastName: "Doe"
+    },
+    age: 12,
+    gender: "Male",
+    interests: ["Basketball", "Reading", "Coding"],
+    greeting: function() {
+        alert("Hi! I'm " + this.name.firstName + " " + this.name.lastName + ".");
+    },
+    bio: function() {
+        return `Hello world my name is ${this.name.firstName} and I love playing ${this.interests[0]}`
+    }
+}
+
 /* STEP 3: Add a simple function (now called a method in this context) to the above object 
 called "greeting" that creates an alert dialog, then type person.greeting() into the console */
 
@@ -36,12 +52,27 @@ Note how this breaks the greeting and bio functions - update the greeting functi
 objects that are built this way are often referred to as associative arrays */
 
 /* STEP 8: You can also set members of an object - try changing the person's name, and age */
+person.name.firstName = "Stephen";
+console.log(person["bio"]());
+
 
 /* STEP 9a: It it also possible to add new members to an object - include eye color - and type person.eyes in the console */
 
 /* STEP 9b: Add a new function called 'goodbye' to the person object and try it by typing person.goodbye into the console */
+person.goodbye = function() {
+    alert("Man I have to run, see you later!");
+}
+
+person.goodbye();
 
 /* STEP 10: We can also dynamically set both names and values for objects… */
+
+let keyName = "experience";
+let keyValue = "expert";
+
+person[keyName] = keyValue;
+
+console.log(person["experience"]);
 
 /* STEP 11a: 'this' is very useful - it allows us to refer to the object in question, specifically. 
 This will become much clearer later in the course. Create two new objects, each with a name, and a function that outputs the name */
