@@ -58,7 +58,7 @@ async function getCountryInfo(countryName) {
     switchImage(flagImageURL, coatOfArmsURL, 0);
 
     capitalHolder.textContent = `Capital of ${fetchedCountryName} (${countryName}) is ${capitalName} ${flagIcon}`
-    languagesHolder.textContent = `Languages spoken in ${fetchedCountryName} (${countryName}) are:`
+    languagesHolder.textContent = `Languages spoken in ${fetchedCountryName} are:`
 
     // Clear the list first
     languagseList.innerHTML = "";
