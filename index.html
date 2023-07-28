@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Assignment4</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="student-info-container">
+                    <p class="student-info"></p>
+                    <button id="reveal-button">click</button>
+                </div>
+            </header>
+            <div class="container">
+                <h1>Find a capital</h1>
+                <div class="wrapper">
+                    <div class="input-container">
+                        <label>Country name: </label>
+                        <input type="text" id="countryName" placeholder="Enter country name"/>
+                    </div>
+                    <div class="flag-container">
+                        <img height="250" width="350" class="flag-element" src="imgs/question-mark.svg" alt="flag"/>
+                    </div>
+                    <div class="capital-container">
+                        <p class="capital-holder">...</p>
+                        <p class="languages-holder">
+                        </p>
+                        <ul class="languages-list"></ul>
+                    </div>
+                    <button>GET</button>
+                </div>
+            </div>
+            <footer>
+                <p>
+                    Huge thanks to <a href="https://twitter.com/amatosg">Alejandro Matos</a> for building <a href="https://restcountries.com/">this incredible API endpoint</a>
+                </p>
+            </footer>
+        </main>
+    </body>
+</html>

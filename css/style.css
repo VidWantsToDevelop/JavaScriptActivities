@@ -1,0 +1,107 @@
+html, body, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    gap: 2rem;
+}
+
+header {
+    flex: 0.35;
+}
+
+body {
+    background: url("../imgs/background-image.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(234, 234, 234);
+}
+
+footer, header {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: salmon;
+}
+
+header{
+    min-height:200px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+button {
+    text-decoration: none;
+    background-color: rgb(121, 121, 255);
+    border-radius: 1rem;
+    padding: 0.25rem;
+    color: white;
+    transition: 0.15s ease-in-out;
+}
+
+button:hover {
+    background-color: rgba(79, 79, 255, 0.762);
+}  
+
+a:visited {
+    color: inherit;
+}
+
+.student-info-container {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.container {
+    opacity: 0.5;
+    transition: 0.4s ease-in-out;
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(140, 140, 140, 0.826);
+    border-radius: 2rem;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.container:hover {
+    opacity: 1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.flag-element {
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.flag-container, .capital-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
